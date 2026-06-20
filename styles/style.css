@@ -1,0 +1,202 @@
+header {
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    background-color: #1b1b1d;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -148px;
+
+    width: 300px;
+    height: 150px;
+    background: #1b1b1d;
+    z-index: 999;
+    clip-path: polygon(0% 1%, 88% 0%, 60% 2%, 46% 5%, 39% 12%, 0% 63%);
+}
+
+nav {
+    display: flex;
+    font-family: "Archivo Black", Arial;
+    justify-content: center;
+    color: #cecece;
+    gap: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    max-height: 80px;
+    padding: 20px;
+}
+
+#hero {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.slideshow {
+    height: 100%;
+    width: 100%;
+}
+
+.slides {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.slides a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-text {
+    position: absolute;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold;
+    backdrop-filter: blur(3px);
+    background: rgba(0,0,0,0.2);
+    border-radius: 20px;
+    padding: 10px;
+    color: #cecece;
+}
+
+.slide-one {
+    top: 65%;
+    left: 65%;
+}
+
+.slide-two {
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slide-three {
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+body {
+    font-family: "Red Hat Display", Arial;
+    margin: 0;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    color: #cecece;
+    background-color: #1b1b1d;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.school-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.social-links {
+    padding: 10px;
+}
+
+#instagram, #facebook, #twitter {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.copyright {
+    padding: 10px;
+}
+
+#ice-hero, #about-hero {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#ice-hero img, #about-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#ice-list {
+    margin-left: 20px;
+}
+
+#ice-list a {
+    color: #eb0b40;
+}
+
+#ice-list a:visited {
+    color: #3f444a;
+}
+
+#ice-list a:hover {
+    color: #b40029;
+}
+
+#about-me {
+    margin-left: 20px;
+}
+
+.arrow {
+    position: absolute;
+    z-index: 2;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 3rem;
+    animation: fadeArrow 2s ease-in-out infinite;
+}
+
+@keyframes fadeArrow {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+

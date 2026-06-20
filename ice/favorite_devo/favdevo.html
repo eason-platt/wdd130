@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <form id="devotional-form">
+          <table>
+            <thead>
+              <tr>
+                <th>Speaker</th>
+                <th>Title</th>
+                <th>Location</th>
+                <th>Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Alvin F. Meredith III</td>
+                <td>How Can One Person Be a Peacemaker?</td>
+                <td>Rexburg, ID</td>
+                <td>April 21, 2026</td>
+              </tr>
+              <tr>
+                <td>Dallin H. Oaks</td>
+                <td>Coming Closer to Jesus Christ</td>
+                <td>Provo, UT</td>
+                <td>February 10, 2026</td>
+              </tr>
+              <tr>
+                <td>Ulisses Soares</td>
+                <td>Light and Truth</td>
+                <td>Provo, UT</td>
+                <td>December 6, 2022</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr class="input-row">
+                <td>
+                  <label for="speaker">Speaker:</label><br>
+                  <input type="text" id="speaker" name="speaker"><br>
+                </td>
+                <td>
+                  <label for="title">Title:</label><br>
+                  <input type="text" id="title" name="title"><br>
+                </td>
+                <td>
+                  <label for="location">Location:</label><br>
+                  <input type="text" id="location" name="location"><br>
+                </td>
+                <td>
+                  <label for="date">Date:</label><br>
+                  <input type="text" id="date" name="date"><br>
+                </td>
+              </tr>
+              <tr class="submit-row">
+                <td colspan="4">
+                  <input type="submit" value="submit">
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
