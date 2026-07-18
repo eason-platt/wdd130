@@ -129,14 +129,24 @@ footer a {
 
 .social-links {
     padding: 10px;
+    display: flex;
+    gap: 20px;
 }
 
-#instagram, #facebook, #twitter {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
+#instagram, #facebook, #x {
     object-fit: cover;
     object-position: center;
+}
+
+#instagram, #facebook {
+    width: 50px;
+    height: 50px;
+}
+
+#x {
+    width: 41px;
+    height: 41px;
+    transform: translateY(5px);
 }
 
 .copyright {
@@ -159,20 +169,29 @@ footer a {
     margin-left: 20px;
 }
 
-#ice-list a {
+#ice-list a, .client-report a {
     color: #eb0b40;
 }
 
-#ice-list a:visited {
+#ice-list a:visited, .client-report a:visited {
     color: #3f444a;
 }
 
-#ice-list a:hover {
+#ice-list a:hover, .client-report a:hover {
     color: #b40029;
 }
 
 #about-me {
-    margin-left: 20px;
+    margin-left: 30px;
+}
+
+.client-report {
+    margin: 30px;
+    margin-top: 100px;
+}
+
+.client-report h2 {
+    color: #eb0b40;
 }
 
 .arrow {
